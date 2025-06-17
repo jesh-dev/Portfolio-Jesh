@@ -4,7 +4,8 @@ import Profile from '../assets/Images/profile.png';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-16 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center
+     px-6 md:px-16 bg-white dark:bg-gray-900 transition-colors duration-300 scroll-smooth" id="home">
       {/* Text Section */}
       <motion.div
         className="md:w-1/2 text-center md:text-left mt-10 md:mt-0"

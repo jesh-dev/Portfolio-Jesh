@@ -30,7 +30,7 @@ const blogPosts = [
   return (
     <>
 {/* Blog Section */}
-  <div className="mt-20 max-w-6xl mx-auto">
+  <div className="mt-20 max-w-6xl mx-auto scroll-smooth" id="blog">
         <motion.h3
           className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-10"
           initial={{ opacity: 0, y: -10 }}

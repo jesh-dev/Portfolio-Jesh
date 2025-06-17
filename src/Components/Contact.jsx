@@ -16,7 +16,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="px-4 py-16 bg-gray-50 dark:bg-gray-950">
+    <section className="px-4 py-16 bg-gray-50 dark:bg-gray-950 scroll-smooth" id="contact">
       <motion.h2
         className="text-4xl font-bold text-center mb-10 text-gray-800 dark:text-white"
         initial={{ opacity: 0, y: -20 }}

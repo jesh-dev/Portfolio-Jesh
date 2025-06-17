@@ -21,7 +21,7 @@ export default function Projects() {
   };
 
   return (
-    <section className="px-4 py-16 bg-white dark:bg-gray-950">
+    <section className="px-4 py-16 bg-white dark:bg-gray-950 scroll-smooth" id="newsletter">
       {/* Footer */}
       <footer className="mt-24 border-t pt-12 dark:border-gray-800 text-center">
         <motion.h4

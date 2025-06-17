@@ -14,18 +14,30 @@ export default function Navbar() {
     exit: { x: "100%", opacity: 0 },
   };
 
+  const handleScroll = (sectionId) => {
+  const el = document.getElementById(sectionId);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
+
   return (
-    <header className="bg-white dark:bg-gray-900 shadow-md fixed w-full z-50 transition-colors duration-300">
+    <header className="bg-white dark:bg-gray-900 shadow-md fixed w-full z-50 transition-colors scroll-smooth duration-300">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <h1 className="text-xl font-bold text-gray-900 dark:text-white">Jeshrun.dev</h1>
 
         <div className="flex items-center gap-4">
           <nav className="hidden md:flex gap-6 text-gray-800 dark:text-gray-200">
-            <a href="#" className="hover:text-blue-500 transition-all">Home</a>
-            <a href="#" className="hover:text-blue-500 transition-all">About</a>
-            <a href="#" className="hover:text-blue-500 transition-all">Projects</a>
-            <a href="#" className="hover:text-blue-500 transition-all">Blog</a>
-            <a href="#" className="hover:text-blue-500 transition-all">Contact</a>
+            <a href="#home" className="hover:text-blue-500 transition-all">Home</a>
+            <a href="#resume" className="hover:text-blue-500 transition-all">Resume</a>
+            <a href="#skill" className="hover:text-blue-500 transition-all">Skills</a>
+            <a href="#projects" className="hover:text-blue-500 transition-all">Projects</a>
+            <a href="#blog" className="hover:text-blue-500 transition-all">Blog</a>
+            <a href="#testimonials" className="hover:text-blue-500 transition-all">Testimonials</a>
+            <a href="#contact" className="hover:text-blue-500 transition-all">Contact</a>
+            <a href="#newsletter" className="hover:text-blue-500 transition-all">Newsletter</a>
+            <a href="#about" className="hover:text-blue-500 transition-all">About</a>
           </nav>
 
           <motion.button
@@ -34,6 +46,7 @@ export default function Navbar() {
             whileTap={{ rotate: 360 }}
           >
             {darkMode === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+
           </motion.button>
 
           <motion.button
@@ -70,11 +83,21 @@ export default function Navbar() {
             </button>
 
             <nav className="flex flex-col gap-6 text-gray-800 dark:text-gray-200 mt-10">
-              <a href="#" className="hover:text-blue-500">Home</a>
+              {/* <a href="#" className="hover:text-blue-500">Home</a>
               <a href="#" className="hover:text-blue-500">About</a>
               <a href="#" className="hover:text-blue-500">Projects</a>
-              <a href="#" className="hover:text-blue-500">Blog</a>
-              <a href="#" className="hover:text-blue-500">Contact</a>
+              <a href="#" className="hover:text-blue-500">Blog</a> */}
+              {/* <a href="#" >Contact</a> */}
+              <button onClick={() => handleScroll('home')} className="hover:text-blue-500 pr-40">Home</button>
+              <button onClick={() => handleScroll('resume')} className="hover:text-blue-500 pr-40">Resume</button>
+              <button onClick={() => handleScroll('skill')} className="hover:text-blue-500 pr-40">Skill</button>
+              <button onClick={() => handleScroll('projects')} className="hover:text-blue-500 pr-40">Projects</button>
+              <button onClick={() => handleScroll('blog')} className="hover:text-blue-500 pr-40">Blog</button>
+              <button onClick={() => handleScroll('testimonials')} className="hover:text-blue-500 pr-40">Testimonials</button>
+              <button onClick={() => handleScroll('contact')} className="hover:text-blue-500 pr-40">Contact</button>
+              <button onClick={() => handleScroll('newsletter')} className="hover:text-blue-500 pr-40">Newsletter</button>
+              {/* <button onClick={() => handleScroll('contact')} className="hover:text-blue-500 pr-40">Contact</button> */}
+
             </nav>
           </motion.div>
         )}

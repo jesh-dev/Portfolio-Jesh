@@ -13,7 +13,7 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <section className="bg-white dark:bg-gray-900 py-20 px-4" id="skills">
+    <section className="bg-white dark:bg-gray-900 py-20 px-4 scroll-smooth" id="skills">
       <div className="max-w-5xl mx-auto">
         <motion.h2
           className="text-5xl md:text-6xl font-syne font-bold text-gray-900 dark:text-white text-center mb-12"

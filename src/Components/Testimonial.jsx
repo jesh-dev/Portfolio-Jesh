@@ -62,7 +62,7 @@ export default function Projects() {
   };
 
   return (
-    <section className="px-4 py-16 bg-white dark:bg-gray-950">
+    <section className="px-4 py-16 bg-white dark:bg-gray-950 scroll-smooth" id="testimonials">
 
       {/* Testimonials */}
       <div className="mt-20 max-w-3xl mx-auto">
