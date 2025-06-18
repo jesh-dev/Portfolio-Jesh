@@ -1,7 +1,7 @@
 // ResumePreviewModal.jsx
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
-import resume from '../assets/Images/resume.pdf'
+import jesh from '../assets/Images/jesh.pdf'
 
 export default function ResumePreviewModal({ isOpen, onClose }) {
   return (
@@ -36,7 +36,7 @@ export default function ResumePreviewModal({ isOpen, onClose }) {
             {/* Resume Content */}
             <div className="flex-1 overflow-auto">
               <iframe
-                src={ resume }
+                src={ jesh }
                 title="Resume"
                 className="w-full h-full"
                 frameBorder="0"

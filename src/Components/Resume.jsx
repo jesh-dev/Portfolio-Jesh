@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Download, Eye } from "lucide-react";
 import ResumePreviewModal from "./ResumePreviewModal";
-import resume from '../assets/Images/resume.pdf'
+import jesh from '../assets/Images/jesh.pdf'
 
 export default function ResumeSection() {
   const [previewOpen, setPreviewOpen] = useState(false);
@@ -32,7 +32,7 @@ export default function ResumeSection() {
 
         <div className="flex justify-center gap-4 flex-wrap">
           <motion.a
-            href={ resume }
+            href={ jesh }
             download
             className="inline-flex items-center gap-3 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 dark:hover:bg-blue-500 transition-all shadow-lg"
             whileHover={{ scale: 1.05 }}

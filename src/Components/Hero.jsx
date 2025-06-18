@@ -17,7 +17,7 @@ export default function Hero() {
       <motion.h1
   className="text-4xl md:text-6xl uppercase font-bold text-gray-900 dark:text-white mb-4 typing-effect"
 >
-  Jeshrun Lawrence
+  Jeshrun Lawrence 
 </motion.h1>
 
 
