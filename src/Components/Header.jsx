@@ -25,7 +25,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-          Jeshrun.dev
+          JESH
         </h1>
 
         {/* Desktop Nav */}

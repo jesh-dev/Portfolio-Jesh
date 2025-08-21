@@ -6,7 +6,7 @@ import "../index.css"
 export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center
-     px-6 md:px-16 bg-white dark:bg-gray-900 transition-colors duration-300 scroll-smooth" id="home">
+     px-6 md:px-16 bg-white dark:bg-black transition-colors duration-300 scroll-smooth" id="home">
       {/* Text Section */}
       <motion.div
         className="md:w-1/2 text-center md:text-left mt-10 md:mt-0"
@@ -16,7 +16,7 @@ export default function Hero() {
       >
        
       <motion.h1
-  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase font-bold text-gray-900 dark:text-white mb-4 typing-effect"
+  className="text-3xl sm:text-4xl family-bebas  md:text-5xl lg:text-6xl uppercase font-normal text-gray-900 dark:text-white mb-4 typing-effect"
 >
   Jeshrun Lawrence 
 </motion.h1>
