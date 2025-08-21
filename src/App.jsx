@@ -6,7 +6,7 @@ import SkillsSection from "./Components/Skill";
 import ProjectsSection from "./Components/Project";
 import Contact from "./Components/Contact";
 import Blog from "./Components/Blog";
-import TestimonialsSection from "./Components/Testimonial";
+// import TestimonialsSection from "./Components/Testimonial";
 import Footer from "./Components/Footer";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <SkillsSection/>
         <ProjectsSection/> 
         <Blog/>
-        <TestimonialsSection/>
+        {/* <TestimonialsSection/> */}
         <Contact/>
         <Footer/>
   

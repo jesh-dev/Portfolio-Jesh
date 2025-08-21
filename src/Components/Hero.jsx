@@ -1,6 +1,7 @@
 // Hero.jsx
 import { motion } from "framer-motion";
 import Profile from '../assets/Images/profile.png';
+import "../index.css"
 
 export default function Hero() {
   return (
@@ -15,7 +16,7 @@ export default function Hero() {
       >
        
       <motion.h1
-  className="text-4xl md:text-6xl uppercase font-bold text-gray-900 dark:text-white mb-4 typing-effect"
+  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase font-bold text-gray-900 dark:text-white mb-4 typing-effect"
 >
   Jeshrun Lawrence 
 </motion.h1>

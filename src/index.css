@@ -4,34 +4,29 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Typing Effect */
 .typing-effect {
-  width: 0;
-  overflow: hidden;
+  display: inline-block;
   white-space: nowrap;
-  border-right: 2px solid #2563eb;
-  animation: typing 4s steps(20, end) 1s infinite, blink 0.7s step-end 8;
+  overflow: hidden;
+  border-right: 3px solid #3b82f6; /* blue cursor */
+  animation: typing 3.5s steps(30, end), blink 0.7s step-end infinite;
 }
 
+/* Typing animation — auto adjusts to text length */
 @keyframes typing {
-  0% {
+  from {
     width: 0;
-    border-right-color: #2563eb;
   }
-  90% {
-    border-right-color: #2563eb;
-  }
-  100% {
+  to {
     width: 100%;
-    border-right-color: transparent;
   }
 }
 
+/* Cursor blink */
 @keyframes blink {
   50% {
-    border-right-color: transparent;
-  }
-  100% {
-    border-right-color: #2563eb;
+    border-color: transparent;
   }
 }
 
