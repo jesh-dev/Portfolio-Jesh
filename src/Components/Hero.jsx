@@ -73,7 +73,7 @@ export default function Hero() {
         <img
           src={Profile}
           alt="Jeshrun Lawrence"
-          className="w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full object-cover border-0 shadow-black/50 backdrop-blur-xl border-blue-500 shadow-xl"
+          className="w-52 h-52 animate-bounce sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full object-cover border-0 shadow-black/50 backdrop-blur-xl border-blue-500 shadow-xl"
         />
       </motion.div>
     </section>
