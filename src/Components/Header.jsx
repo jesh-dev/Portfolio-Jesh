@@ -35,7 +35,7 @@ export default function Navbar() {
               Home
             </a>
             <a href="#about" className="hover:text-blue-500 transition-all">
-              About Us
+              About Me
             </a>
 
             {/* Dropdown */}
