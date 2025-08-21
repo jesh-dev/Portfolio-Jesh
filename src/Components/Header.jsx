@@ -4,6 +4,21 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Apply initial theme based on state
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark'); // or setAttribute('data-theme', 'dark')
+    } else {
+      document.documentElement.classList.remove('dark'); // or removeAttribute('data-theme')
+    }
+  }, [isDarkMode]);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   // const [darkMode, setDarkMode] = useState(() =>
   //   localStorage.getItem("theme") === "dark"
   // );
@@ -82,11 +97,11 @@ export default function Navbar() {
 
           {/* Dark Mode Toggle */}
           <motion.button
-            onClick={() => setDarkMode(!darkMode)}
+            onClick={toggleDarkMode}
             className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-all"
             whileTap={{ rotate: 360 }}
           >
-            {darkMode ? (
+            {isDarkMode ? (
               <Sun className="w-5 h-5 text-yellow-500" />
             ) : (
               <Moon className="w-5 h-5" />
