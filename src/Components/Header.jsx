@@ -45,7 +45,7 @@ export default function Navbar() {
             className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-all"
             whileTap={{ rotate: 360 }}
           >
-            {darkMode === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            {darkMode === "dark" ? <Sun className="w-5 dark:text-yellow-500 h-5" /> : <Moon className="w-5 h-5" />}
 
           </motion.button>
 
