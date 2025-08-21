@@ -1,6 +1,6 @@
 // Hero.jsx
 import { motion } from "framer-motion";
-import Profile from '../assets/Images/profile.png';
+import Profile from '../assets/Images/mrj.png';
 import "../index.css"
 
 export default function Hero() {
@@ -47,7 +47,7 @@ export default function Hero() {
         <img
           src= {Profile} // Replace with your path
           alt="Jeshrun Lawrence"
-          className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-blue-500 shadow-lg"
+          className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-0 shadow-xl shadow-black border-blue-500"
         />
       </motion.div>
     </section>
