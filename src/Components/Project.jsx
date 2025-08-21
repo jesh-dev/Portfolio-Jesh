@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import portfolioImage from '../assets/Images/portfolio.png'
 
 export default function Projects() {
   const [filter, setFilter] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
 
   const allProjects = [
-    { title: "Portfolio Website", category: "Web", image: "/images/portfolio.png" },
+    { title: "Portfolio Website", category: "Web", image: portfolioImage },
     { title: "E-commerce App", category: "Mobile", image: "/images/ecommerce.png" },
     { title: "Admin Dashboard", category: "Web", image: "/images/dashboard.png" },
     { title: "Chat App", category: "Mobile", image: "/images/chat.png" },
