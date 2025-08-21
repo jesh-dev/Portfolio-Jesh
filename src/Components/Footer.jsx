@@ -23,9 +23,9 @@ export default function Projects() {
   return (
     <section className="px-4 py-16 bg-white dark:bg-gray-950 scroll-smooth" id="newsletter">
       {/* Footer */}
-      <footer className="mt-24 border-t pt-12 dark:border-gray-800 text-center">
+      <footer className="mt-24 border-t border-violet-700 pt-12 dark:border-gray-800 text-center">
         <motion.h4
-          className="text-2xl font-bold mb-4 text-gray-800 dark:text-white"
+          className="text-2xl font-bold mb-4 text-transparent bg-gradient-to-l from-violet-500 to-orange-500 bg-clip-text dark:text-white"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -41,7 +41,7 @@ export default function Projects() {
           />
           <button
             type="submit"
-            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+            className="px-4 py-2 bg-orange-500 shadow-orange-500 shadow-lg hover:shadow-violet-500 text-white rounded hover:bg-violet-600 transition duration-500"
           >
             Subscribe
           </button>
