@@ -23,7 +23,7 @@ export default function Projects() {
   return (
     <section className="px-4 py-16 bg-white dark:bg-gray-950 scroll-smooth" id="projects">
       <motion.h2
-        className="text-4xl font-bold text-center mb-10 text-gray-800 dark:text-white"
+        className="text-4xl font-bold bg-gradient-to-l from-violet-500 to-orange-500 bg-clip-text text-transparent text-center mb-10 dark:text-transparent"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -38,8 +38,8 @@ export default function Projects() {
             onClick={() => setFilter(cat)}
             className={`px-4 py-2 rounded-full border ${
               filter === cat
-                ? "bg-blue-600 text-white"
-                : "text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-700"
+                ? "bg-orange-500 text-white"
+                : "text-Violet-700 dark:text-gray-200 border-gray-300 dark:border-gray-700"
             } transition-all duration-300`}
           >
             {cat}

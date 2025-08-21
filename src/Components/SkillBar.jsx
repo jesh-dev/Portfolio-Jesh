@@ -11,7 +11,7 @@ export default function SkillBar({ skill, level }) {
 
       <div className="w-full bg-gray-200 dark:bg-gray-700 h-3 rounded-full overflow-hidden">
         <motion.div
-          className="bg-blue-600 h-full"
+          className="bg-gradient-to-r from-violet-500 to-orange-500 h-full"
           initial={{ width: 0 }}
           whileInView={{ width: `${level}%` }}
           viewport={{ once: true }}

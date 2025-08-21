@@ -18,13 +18,13 @@ export default function Contact() {
   return (
     <section className="px-4 py-16 bg-gray-50 dark:bg-gray-950 scroll-smooth" id="contact">
       <motion.h2
-        className="text-4xl font-bold text-center mb-10 text-gray-800 dark:text-white"
+        className="text-4xl font-bold text-center mb-10 text-transparent bg-gradient-to-l from-violet-500 to-orange-500 bg-clip-text dark:text-white"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        Contact Me
+        Reach Out
       </motion.h2>
 
       <motion.form
@@ -78,7 +78,7 @@ export default function Contact() {
 
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
+          className="w-full bg-violet-600 shadow-lg shadow-violet-500 text-white py-2 px-4 rounded hover:bg-orange-500 hover:shadow-orange-500 duration-500 transition"
         >
           Send Message
         </button>

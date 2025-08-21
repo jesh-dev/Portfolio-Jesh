@@ -12,6 +12,7 @@ const blogPosts = [
     title: "Blog Post Title 1",
     summary: "A short description of what the blog post is about. It's engaging and informative.",
     content: "This is the full content of Blog Post 1. Here you can elaborate on the topic in more detail, provide insights, and useful examples to your readers."
+    
   },
   {
     id: 2,
@@ -32,7 +33,7 @@ const blogPosts = [
 {/* Blog Section */}
   <div className="mt-20 max-w-6xl mx-auto scroll-smooth" id="blog">
         <motion.h3
-          className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-10"
+          className="text-3xl font-bold text-center text-transparent bg-gradient-to-l from-violet-500 to-orange-500 bg-clip-text mb-10"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
