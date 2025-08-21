@@ -1,7 +1,6 @@
 // Navbar.jsx
-import { useState } from "react";
-import { useDarkMode } from "./DarkModeContext";
-import { Moon, Sun } from "lucide-react";
+import { useState, useEffect } from "react";
+// import { Moon, Sun } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
