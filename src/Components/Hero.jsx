@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Profile from "../assets/Images/profile.png";
+import Profile from "../assets/Images/mrj.png";
 import "../index.css"; // ✅ Ensure CSS for typing effect
 
 export default function Hero() {

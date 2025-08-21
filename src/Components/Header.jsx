@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(() =>
-    localStorage.getItem("theme") === "dark"
-  );
+  // const [darkMode, setDarkMode] = useState(() =>
+  //   localStorage.getItem("theme") === "dark"
+  // );
   const [dropdown, setDropdown] = useState(false);
 
   const menuVariants = {
@@ -15,10 +15,10 @@ export default function Navbar() {
     exit: { x: "100%", opacity: 0 },
   };
 
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", darkMode);
-    localStorage.setItem("theme", darkMode ? "dark" : "light");
-  }, [darkMode]);
+  // useEffect(() => {
+  //   document.documentElement.classList.toggle("dark", darkMode);
+  //   localStorage.setItem("theme", darkMode ? "dark" : "light");
+  // }, [darkMode]);
 
   return (
     <header className="bg-white dark:bg-gray-900 shadow-md fixed w-full z-50 transition-colors duration-300">
