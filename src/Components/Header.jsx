@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Moon, Sun, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import "../index.css"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -39,17 +40,19 @@ export default function Navbar() {
     <header className="bg-white dark:bg-gray-900 shadow-md fixed w-full z-50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-xl font-bold text-gray-900 dark:text-white">
+        <h1 className="text-xl bg-gradient-to-tl from-violet-500 to-orange-500 bg-clip-text text-transparent font-bold  dark:text-transparent">
+           <a href="#home" className="hover:text-orange-500 hover:scale-110 transition-all duration-500">
           JESH
+            </a>
         </h1>
 
         {/* Desktop Nav */}
         <div className="flex items-center gap-4">
           <nav className="hidden md:flex gap-6 text-gray-800 dark:text-gray-200 relative">
-            <a href="#home" className="hover:text-blue-500 transition-all">
+            <a href="#home" className="hover:text-orange-500 transition-all">
               Home
             </a>
-            <a href="#about" className="hover:text-blue-500 transition-all">
+            <a href="#about" className="hover:text-orange-500 transition-all">
               About Me
             </a>
 
@@ -57,7 +60,7 @@ export default function Navbar() {
             <div className="relative">
               <button
                 onClick={() => setDropdown(!dropdown)}
-                className="flex items-center gap-1 hover:text-blue-500 transition-all"
+                className="flex items-center gap-1 hover:text-orange-500 transition-all"
               >
                 Others <ChevronDown size={16} />
               </button>
@@ -116,9 +119,9 @@ export default function Navbar() {
             animate={{ rotate: open ? 90 : 0 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <div className="w-6 h-[2px] bg-gray-800 dark:bg-white mb-1" />
-            <div className="w-6 h-[2px] bg-gray-800 dark:bg-white mb-1" />
-            <div className="w-6 h-[2px] bg-gray-800 dark:bg-white" />
+            <div className="w-6 h-[2px] bg-orange-500 dark:bg-white mb-1" />
+            <div className="w-6 h-[2px] bg-violet-500 dark:bg-white mb-1" />
+            <div className="w-6 h-[2px] bg-orange-500 dark:bg-white" />
           </motion.button>
         </div>
       </div>
@@ -137,23 +140,23 @@ export default function Navbar() {
             {/* Close */}
             <button
               onClick={() => setOpen(false)}
-              className="absolute top-4 right-4 text-gray-600 dark:text-gray-300 text-xl font-bold"
+              className="absolute top-4 right-4 text-violet-600 dark:text-gray-300 text-xl font-bold"
             >
               &times;
             </button>
 
             {/* Sidebar Nav */}
             <nav className="flex flex-col gap-6 text-gray-800 dark:text-gray-200 mt-10">
-              <a href="#home" className="hover:text-blue-500">
+              <a href="#home" className="hover:text-orange-500">
                 Home
               </a>
-              <a href="#about" className="hover:text-blue-500">
+              <a href="#about" className="hover:text-orange-500">
                 About Us
               </a>
 
               {/* Dropdown inside Mobile */}
               <details className="group">
-                <summary className="flex items-center justify-between cursor-pointer hover:text-blue-500">
+                <summary className="flex items-center justify-between cursor-pointer hover:text-orange-500">
                   Others
                   <ChevronDown
                     size={16}
@@ -161,13 +164,13 @@ export default function Navbar() {
                   />
                 </summary>
                 <div className="ml-4 mt-2 flex flex-col gap-2">
-                  <a href="#projects" className="hover:text-blue-500">
+                  <a href="#projects" className="hover:text-orange-500">
                     Projects
                   </a>
-                  <a href="#blog" className="hover:text-blue-500">
+                  <a href="#blog" className="hover:text-orange-500">
                     Blog
                   </a>
-                  <a href="#contact" className="hover:text-blue-500">
+                  <a href="#contact" className="hover:text-orange-500">
                     Contact
                   </a>
                 </div>

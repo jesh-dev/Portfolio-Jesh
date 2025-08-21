@@ -30,7 +30,8 @@ export default function Hero() {
         {/* ✅ Typing Effect for Name */}
         <motion.h1
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase font-bold 
-                     text-gray-900 dark:text-white mb-4 typing-effect"
+                     dark:text-white mb-4 typing-effect
+                     bg-gradient-to-r from-violet-500 to-orange-500 bg-clip-text text-transparent"
         >
           Jeshrun Lawrence
         </motion.h1>
@@ -43,7 +44,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.6 }}
-            className="text-lg sm:text-xl md:text-2xl font-semibold uppercase text-blue-600 dark:text-blue-400 mb-4"
+            className="text-lg sm:text-xl md:text-2xl font-semibold uppercase text-violet-600 dark:text-orange-500 mb-4"
           >
             {roles[currentRole]}
           </motion.h2>
@@ -56,7 +57,7 @@ export default function Hero() {
         </p>
         <a
           href="#projects"
-          className="inline-block bg-blue-600 text-white dark:bg-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-400 transition-all"
+          className="inline-block bg-violet-600 shadow-xl shadow-violet-500 text-white dark:bg-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-orange-500 hover:scale-125 hover:shadow-orange-500 dark:hover:bg-orange-400 active:animate-ping transition-all duration-500"
         >
           View Projects
         </a>
@@ -72,7 +73,7 @@ export default function Hero() {
         <img
           src={Profile}
           alt="Jeshrun Lawrence"
-          className="w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-blue-500 shadow-lg"
+          className="w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full object-cover border-0 shadow-black/50 backdrop-blur-xl border-blue-500 shadow-xl"
         />
       </motion.div>
     </section>
