@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const { darkMode, toggleDarkMode } = useDarkMode();
 
   const menuVariants = {
     hidden: { x: "100%", opacity: 0 },
@@ -39,14 +38,14 @@ export default function Navbar() {
             <a href="#about" className="hover:text-blue-500 transition-all">About</a>
           </nav>
 
-          <motion.button
+          {/* <motion.button
             onClick={toggleDarkMode}
             className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-all"
             whileTap={{ rotate: 360 }}
           >
             {darkMode === "dark" ? <Sun className="w-5 dark:text-yellow-500 h-5" /> : <Moon className="w-5 h-5" />}
 
-          </motion.button>
+          </motion.button> */}
 
           <motion.button
             onClick={() => setOpen(!open)}

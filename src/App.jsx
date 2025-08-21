@@ -1,5 +1,5 @@
 import Navbar from "./Components/Header";
-import { DarkModeProvider } from "./Components/DarkModeContext";
+// import { DarkModeProvider } from "./Components/DarkModeContext";
 import Hero from "./Components/Hero";
 import ResumeSection from "./Components/Resume";
 import SkillsSection from "./Components/Skill";
@@ -11,8 +11,9 @@ import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <DarkModeProvider>
-      <div className="min-h-screen bg-white dark:bg-gray-950 transition-colors duration-500">
+    <>
+    {/* <DarkModeProvider>
+       <div className="min-h-screen bg-white dark:bg-gray-950 transition-colors duration-500"> */}
         <Navbar />
         <Hero/>
         <ResumeSection/>
@@ -23,8 +24,9 @@ function App() {
         <Contact/>
         <Footer/>
   
-      </div>
-    </DarkModeProvider>
+      {/* </div>
+    </DarkModeProvider> */}
+    </>
   );
 }
 
